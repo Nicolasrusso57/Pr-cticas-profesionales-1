@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario con Botones</title>
+
+</head>
+<body>
+<h1> Presiona un Boton </h1> 
+
+<form id="Mi Formulario"> <button type="button" id="btn1">1</button>
+
+<button type="button" id="btn2">2</button> 
+
+<button type="button" id="btn3">3</button>
+
+</form>
+
+<p id="mensaje"></p>
+
+ <script>
+
+ //Funcion de JavaScript que se ejecuta cuando se presiona un boton
+
+function mostrarMensaje (numeroBoton) 
+{
+
+// Muestra una alerta con el mesaje alert("Se presiono el boton numero: " + numeroBoton);
+
+//Opcional tambien puedes mostrar el mensaje   en la pagina (en el parrafo con id="mensaje")
+
+document.getElementById('mensaje').textContent = "Ultimo boton presionado:" + numeroBoton;
+}
+
+// Asignacion de la funcion a los eventos de clic de cada boton.document.getElementById('btn1').addEventListener('click' , function())
+
+{
+    mostrarMensaje(1)
+           });
+
+            document.getElementById('btn2').addEventListener('click ' , function())
+            {
+
+            mostrarMensaje(2)
+                    });
+
+           document.getElementById('btn3').addEventListener('click' , function())
+            {
+    mostrarMensaje(3):
+            });
+            
+            </script>
+</body>
+</html>
